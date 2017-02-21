@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/b9/57/c9/b957c90e6238270c49eb3a0f3ee9b401.jpg);
+    background-color: rgb(100, 100, 100);
+    background-blend-mode: overlay;
+    height: 100vh;
+}
+ul{
+    text-shadow: 2px 2px 4px #000;
+    padding: 1em;
+    list-style: none;
+}
+.quote-container{
+    text-align: center;
+    overflow: scroll;
+}
+.quote{
+    color: #EEE;
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+.author{
+    font-family: cursive;
+    color: #EEE;
+}
+.quote-form{
+    opacity: 1;
+    position: absolute;
+    bottom: 1em;
+    margin-left:18% ;
+    text-align: center;
+}
+#ta{
+    border:0px;
+    border: 1px solid white;
+    box-shadow: 4px 4px 10px #000;
+    outline: none;
+    background-color: rgba(0,0,0,0);
+    color:white;
+    border-radius: 5px;
+    text-align: center;
+    resize: none;
+    font-size: 1.5em;
+    width: 75%;
+    padding: .5em;
+}
+textarea::-webkit-input-placeholder {
+   color: white;
+   font-size: 2em;
+}{
+    color: white;
+}
+#ip{
+    outline: none;
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-align: center;
+}
+#ip::-webkit-input-placeholder {
+   color: white;
+}
+#sm{
+    outline: none;
+    border: 0px;
+    padding: 4px;
+    border-radius: 5px;
+    background: linear-gradient(#5E89EF, #90D5F9);
+    color: white;
+}

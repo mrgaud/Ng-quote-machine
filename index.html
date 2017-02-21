@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div ng-app="quoteApp">
+        <div ng-controller='quoteCtrl'class="quote-container">
+            <ul ng-repeat='quote in quotes track by $index' >
+                <li class="quote">{{quote.text}}</li>
+                <li class="author">-{{quote.author}}</li>
+            </ul>
+            <div class="quote-form">
+                <textarea id='ta' name="name" rows="3" cols="80" ng-model='newQuote' placeholder="New quote goes here.."></textarea><br>
+                <input id='ip' type="text" placeholder="author" ng-model='newAuthor'>
+                <button id='sm' type="button" name="button" ng-click='addNewQuote(newQuote, newAuthor)'>Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+    <script src="js/quoteCtrl.js" charset="utf-8"></script>
+    <script src="js/quoteServices.js" charset="utf-8"></script>
+</body>
+
+</html>
